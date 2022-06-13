@@ -1,0 +1,3 @@
+<ul class="body-parts">
+    <li *ngFor="let part of muscles$ |async" (click)="search(part)">{{part}}</li>
+</ul>

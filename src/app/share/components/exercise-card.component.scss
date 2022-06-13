@@ -1,0 +1,14 @@
+article {
+    width: 350px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 5px 7px 3px #bcbcbc;
+    box-shadow: 1px 5px 7px 3px #bcbcbc;
+    padding: 10px;
+    align-self: stretch;
+
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+}

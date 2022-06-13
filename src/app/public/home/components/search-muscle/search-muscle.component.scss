@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+        color: red;
+        border: 2px solid red;
+        font-size: 1.3rem;
+        padding: 8px 12px;
+        border-radius: 30px;
+        margin: 20px 30px;
+        list-style: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,21 @@
+label {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input,
+button {
+    padding: 10px 20px;
+}
+
+input {
+    width: 70%;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bold;
+}

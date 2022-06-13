@@ -1,1 +1,11 @@
 <app-hero></app-hero>
+
+<section class="search">
+    <h2>Awesome Exercises You <br> Should Know</h2>
+    <app-search-name (searchParams)="search($event)"></app-search-name>
+
+    <app-search-muscle (searchParams)="search($event)"></app-search-muscle>
+
+    <h2 class="result">Showing Results</h2>
+    <app-search-results [results$]="results$"></app-search-results>
+</section>
