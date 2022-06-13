@@ -12,6 +12,7 @@ section {
 
     h2 {
         font-size: 3rem;
+        line-height: 1.5;
     }
 
     button {
@@ -29,7 +30,7 @@ section {
 
     .background-text {
         position: absolute;
-        bottom: -18rem;
+        bottom: 0;
         font-size: 14rem;
         color: red;
         opacity: 0.2;

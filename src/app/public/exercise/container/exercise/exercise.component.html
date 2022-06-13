@@ -1,0 +1,30 @@
+<section>
+    <img [src]="exercise.gifUrl" [alt]="exercise.name">
+
+    <div class="right">
+        <h1>{{exercise.name}}</h1>
+        <div class="category">
+            <div>
+                <img src="../../../../../assets/icons/body-part.png" alt="body part icon">
+            </div>
+            {{exercise.bodyPart}}
+        </div>
+        <div class="category">
+            <div>
+                <img src="../../../../../assets/icons/equipment.png" alt="equipment icon">
+            </div>
+            {{exercise.equipment}}
+        </div>
+        <div class="category">
+            <div>
+                <img src="../../../../../assets/icons/target.png" alt="target icon">
+            </div>
+            {{exercise.target}}
+        </div>
+    </div>
+</section>
+
+<div class="videos">
+    <h2>Watch <span>{{exercise.name}}</span> exercises video</h2>
+    <app-videos [videos$]="videos$"></app-videos>
+</div>

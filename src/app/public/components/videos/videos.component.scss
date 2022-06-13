@@ -1,0 +1,17 @@
+.videos {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .video {
+        width: 300px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

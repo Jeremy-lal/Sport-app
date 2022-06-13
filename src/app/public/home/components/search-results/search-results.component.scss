@@ -1,5 +1,31 @@
-.search-results {
+.exercises {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            cursor: pointer;
+            margin: 5px;
+        }
+    }
+}
+
+.active {
+    background-color: grey;
+    color: white;
 }

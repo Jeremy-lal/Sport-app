@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment';
 import { map, Observable, take, tap } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +9,7 @@ import { Exercise } from '../models/exercise';
 })
 export class ExercisesService {
   headers = {
-    'X-RapidAPI-Key': '6d82a551c8msha89acca4206dd44p1134dejsn525ed885ce57',
+    'X-RapidAPI-Key': environment.api_key,
     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
   }
 
@@ -31,5 +32,11 @@ export class ExercisesService {
       map(el => el.flat())
     )
   }
+
+  getById(id: string): Observable<Exercise> {
+    return this.http.get<Exercise>(this.url + 'exercise/' + id, { headers: this.headers })
+  }
+
+  // https://exercisedb.p.rapidapi.com/exercises/exercise/001
 }
 

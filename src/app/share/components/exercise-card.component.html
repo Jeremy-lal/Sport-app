@@ -1,4 +1,4 @@
-<article>
+<article [routerLink]="'/exercises/details/' + exercise.id">
     <img [src]="exercise.gifUrl" [alt]="exercise.name" />
     <p>{{exercise.bodyPart}}</p>
     <h3>{{exercise.name}}</h3>
