@@ -1,25 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 
 import { NavbarComponent } from './navbar.component';
 
 describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+  let spectator: Spectator<NavbarComponent>;
+  const createComponent = createComponentFactory(NavbarComponent);
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
+  beforeEach(() => spectator = createComponent());
+
+
+  describe('Navbar content', () => {
+    it('should have a picture logo', () => {
+      expect(spectator.query('[data-test="logo"]')).toBeTruthy()
     })
-    .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(NavbarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should have link to 2 pages', () => {
+      expect(spectator.query('[data-test="home-type"]')).toBeTruthy()
+      expect(spectator.query('[data-test="exercises-type"]')).toBeTruthy()
+    })
+  })
 });

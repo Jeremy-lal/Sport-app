@@ -1,4 +1,4 @@
-import { ExercisesService } from './../../../../share/services/exercices.service';
+import { ExercisesService } from '../../../../core/services/exercices.service';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Exercise } from 'src/app/share/models/exercise';

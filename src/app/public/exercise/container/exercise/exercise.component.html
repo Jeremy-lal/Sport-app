@@ -1,4 +1,4 @@
-<section>
+<section *ngIf="(exercise$|async) as exercise">
     <img [src]="exercise.gifUrl" [alt]="exercise.name">
 
     <div class="right">
@@ -25,6 +25,6 @@
 </section>
 
 <div class="videos">
-    <h2>Watch <span>{{exercise.name}}</span> exercises video</h2>
+    <h2>Watch <span>{{(exercise$|async)?.name}}</span> exercises video</h2>
     <app-videos [videos$]="videos$"></app-videos>
 </div>

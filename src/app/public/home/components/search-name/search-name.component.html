@@ -1,4 +1,4 @@
 <label>
-    <input [(ngModel)]="name" placeholder="Exercise name">
+    <input type="search" [(ngModel)]="name" placeholder="Exercise name" (keydown.enter)="search()">
     <button (click)="search()">Search</button>
 </label>

@@ -1,4 +1,4 @@
-import { Exercise } from './../models/exercise';
+import { Exercise } from '../../models/exercise';
 import { Component, Input } from '@angular/core';
 
 @Component({
