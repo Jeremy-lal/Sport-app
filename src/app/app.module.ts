@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterLinkStubDirective } from './test-helper/router-link-stub.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RouterLinkStubDirective
   ],
   imports: [
     BrowserModule,

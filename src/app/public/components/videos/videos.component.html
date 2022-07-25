@@ -1,10 +1,10 @@
 <div class="videos">
-    <div class="video" *ngFor="let item of videos$ | async">
+    <div class="video" *ngFor="let item of videos$ | async ">
         <a key={index} className="exercise-video" [href]="'https://www.youtube.com/watch?v=' + item.video.videoId"
             target="_blank" rel="noreferrer">
-            <img [src]="item.video.thumbnails[0].url" />
-            <h3>{{item.video.title}}</h3>
-            <p>{{item.video.channelName}}</p>
+            <img [src]="item.video.thumbnails[0].url" data-test="img-video"/>
+            <h3 data-test="title-video">{{item.video.title}}</h3>
+            <p data-test="channel-video">{{item.video.channelName}}</p>
         </a>
     </div>
 </div>

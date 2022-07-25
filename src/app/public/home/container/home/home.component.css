@@ -1,0 +1,31 @@
+.search {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5vw;
+  padding-bottom: 50px;
+}
+
+.search h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 100px;
+}
+
+.search .result {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+app-search-name {
+  width: 90%;
+}
+/*# sourceMappingURL=home.component.css.map */

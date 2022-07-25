@@ -1,0 +1,22 @@
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.videos a {
+  color: black;
+  text-decoration: none;
+}
+
+.videos .video {
+  width: 300px;
+}
+
+.videos .video img {
+  width: 100%;
+}
+/*# sourceMappingURL=videos.component.css.map */

@@ -8,7 +8,6 @@ describe('NavbarComponent', () => {
 
   beforeEach(() => spectator = createComponent());
 
-
   describe('Navbar content', () => {
     it('should have a picture logo', () => {
       expect(spectator.query('[data-test="logo"]')).toBeTruthy()

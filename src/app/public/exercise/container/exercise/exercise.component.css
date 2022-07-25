@@ -1,0 +1,61 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+section > img {
+  width: 50%;
+}
+
+section .right h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 100px 0;
+}
+
+section .right .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+section .right .category div {
+  border-radius: 50%;
+  background-color: #353531;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .right .category div img {
+  width: 40px;
+}
+
+.videos {
+  padding: 0 5vh;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.videos h2 span {
+  color: red;
+}
+/*# sourceMappingURL=exercise.component.css.map */

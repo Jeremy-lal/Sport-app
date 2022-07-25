@@ -1,0 +1,26 @@
+label {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input,
+button {
+  padding: 10px 20px;
+}
+
+input {
+  width: 70%;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+/*# sourceMappingURL=search-name.component.css.map */

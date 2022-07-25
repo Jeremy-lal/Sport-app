@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAcjC;;AAhBD,AAII,OAJG,CAIH,CAAC,CAAC;EACE,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACxB;;AAPL,AASI,OATG,CASH,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;CAKf;;AAfL,AAYQ,OAZD,CASH,MAAM,CAGF,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "videos.component.scss"
+    ],
+    "names": [],
+    "file": "videos.component.css"
+}

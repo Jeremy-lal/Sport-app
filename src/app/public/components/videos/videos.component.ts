@@ -1,17 +1,11 @@
 import { Observable } from 'rxjs';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-videos',
   templateUrl: './videos.component.html',
   styleUrls: ['./videos.component.scss']
 })
-export class VideosComponent implements OnInit {
+export class VideosComponent {
   @Input() videos$!: Observable<any>
-  constructor() { }
-
-  ngOnInit(): void {
-
-  }
-
 }
