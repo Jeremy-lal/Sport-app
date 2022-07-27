@@ -17,9 +17,7 @@ describe('ExerciseCardComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ExerciseCardComponent],
       imports: [
-        RouterTestingModule.withRoutes([
-          { path: 'exercises/details/:id', component: DummyComponent }
-        ])
+        RouterTestingModule
       ]
     });
     fixture = TestBed.createComponent(ExerciseCardComponent);
@@ -92,6 +90,3 @@ describe('ExerciseCardComponent', () => {
       });
   });
 });
-
-@Component({ template: '' })
-class DummyComponent { }
