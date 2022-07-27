@@ -21,6 +21,7 @@
     "@angular/router": "^14.0.0",
     "@ngneat/spectator": "^11.1.0",
     "jasmine-es6-spies": "^0.0.4",
+    "ng-mocks": "^14.1.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
