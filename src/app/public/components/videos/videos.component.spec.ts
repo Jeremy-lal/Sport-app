@@ -13,21 +13,21 @@ describe('VideosComponent', () => {
       video: {
         channelName: 'Channel 1',
         title: 'title 1',
-        thubnails: [{ url: 'url 1' }]
+        thumbnails: [{ url: 'url 1' }]
       },
     },
     {
       video: {
         channelName: 'Channel 2',
         title: 'title 2',
-        thubnails: [{ url: 'url 2' }]
+        thumbnails: [{ url: 'url 2' }]
       }
     },
     {
       video: {
         channelName: 'Channel 3',
         title: 'title 3',
-        thubnails: [{ url: 'url 3' }]
+        thumbnails: [{ url: 'url 3' }]
       }
     },
   ]
@@ -41,19 +41,22 @@ describe('VideosComponent', () => {
   });
 
 
-  xdescribe('videos infos', () => {
+  describe('videos infos', () => {
 
-    it('should display 3 videos', (done) => {
-      // comp.videos$ = of(expectedVideos);
-      // fixture.detectChanges();
-      expect(true).toBe(true)
-      // expect(fixture.debugElement.queryAll(By.css('.videos')).length).toBe(1)
+    beforeEach(() => {
+      comp.videos$ = of(expectedVideos);
+      fixture.detectChanges();
+
     })
 
-    // it('first should have all the information', () => {
-    //   expect(fixture.debugElement.query(By.css('[data-test="img-video"]'))).toBeTruthy()
-    //   expect(fixture.debugElement.query(By.css('[data-test="title-video"]')).nativeElement).toBe('Title 1')
-    //   expect(fixture.debugElement.query(By.css('[data-test="channel-video"]')).nativeElement).toBe('Channel 1')
-    // })
+    it('should display 3 videos', () => {
+      expect(fixture.debugElement.queryAll(By.css('.video')).length).toBe(3)
+    })
+
+    it('first should have all the information', () => {
+      expect(fixture.debugElement.query(By.css('[data-test="img-video"]'))).toBeTruthy()
+      expect(fixture.debugElement.query(By.css('[data-test="title-video"]')).nativeElement.textContent).toBe('title 1')
+      expect(fixture.debugElement.query(By.css('[data-test="channel-video"]')).nativeElement.textContent).toBe('Channel 1')
+    })
   })
 });

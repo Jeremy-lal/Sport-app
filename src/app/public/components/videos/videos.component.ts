@@ -1,3 +1,4 @@
+import { Video } from './../../../share/models/video';
 import { Observable } from 'rxjs';
 import { Component, Input } from '@angular/core';
 
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./videos.component.scss']
 })
 export class VideosComponent {
-  @Input() videos$!: Observable<any>
+  @Input() videos$!: Observable<Video[]>
 }

@@ -34,10 +34,15 @@ export class SearchResultsComponent implements OnInit, OnChanges {
     const indexFirst = this.currentPage * this.itemPerPage
     this.exercisesToDisplay$ = this.results$.pipe(
       tap(el => {
-        this.nbPage = el.length % this.itemPerPage
+        this.nbPage = Math.ceil(el.length / this.itemPerPage)
       }),
       map(el => el.slice(indexFirst, indexFirst + 9)),
     )
+  }
+
+  showPageButton(index: number) {
+    const nbBeforeAfter = 2
+    return index >= (this.currentPage - nbBeforeAfter) && index <= (this.currentPage + nbBeforeAfter)
   }
 
 }

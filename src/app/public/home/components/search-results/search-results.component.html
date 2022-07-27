@@ -4,10 +4,13 @@
     </div>
     <nav>
         <ul>
-            <li *ngFor="let item of [].constructor(nbPage); let i = index" (click)="changePage(i)"
-                [ngClass]="i === currentPage ? 'active' : ''">
+
+
+          <ng-container *ngFor="let item of [].constructor(nbPage); let i = index; let first = first; let last = last">
+            <li (click)="changePage(i)" [ngClass]="i === currentPage ? 'active' : ''" *ngIf="first || last || showPageButton(i)">
                 {{i + 1}}
             </li>
+           </ng-container>
         </ul>
     </nav>
 </div>
